@@ -1,5 +1,5 @@
 # Ex.08 Design of a Standard Calculator
-## Date: 23/04/2024
+## Date: 29/04/2024
 
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
@@ -42,6 +42,10 @@ calc.html
         <div class="calculator">
             <input type="text" id="display" readonly>
             <div class="buttons">
+                <button onclick="appendToDisplay('(')">(</button>
+                <button onclick="appendToDisplay(')')">)</button>
+                <button onclick="appendToDisplay('^')">^</button>
+                <button onclick="appendToDisplay('%')">%</button>
                 <button onclick="appendToDisplay('1')">1</button>
                 <button onclick="appendToDisplay('2')">2</button>
                 <button onclick="appendToDisplay('3')">3</button>
@@ -64,6 +68,7 @@ calc.html
     <script src="script.js"></script>
 </body>
 </html>
+
 
 styles.css
 
@@ -147,9 +152,8 @@ function calculate() {
 
 ## OUTPUT:
 
-![alt text](<Screenshot (146).png>)
-
-![alt text](<Screenshot (147).png>)
+![alt text](<Screenshot (149).png>)
+![alt text](<Screenshot (150).png>) 
 
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
